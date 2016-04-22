@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.skynoff.rsmapp.colmentario.Agregar">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true">
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="10sp"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/md_green_900"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+
+                    android:text="INSTANCIA              "/>
+
+                <Spinner
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/instancia"
+                    android:spinnerMode="dialog" />
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/md_green_900"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="SUB INSTANCIA 1  "
+                    android:id="@+id/textView" />
+
+                <Spinner
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/spinstancia2"
+                    android:spinnerMode="dialog" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/md_green_900"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="SUB INSTANCIA 2  "
+                    android:id="@+id/textView2" />
+
+                <Spinner
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:id="@+id/spinstancia3"
+                    android:spinnerMode="dialog" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="18sp"
+                android:orientation="vertical"
+                android:id="@+id/Formulario"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="POSEE CODIGO"
+                    android:focusable="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/cbcode"
+                    android:onClick="habilita"
+                    android:checked="false" >
+                    <!--   <requestFocus /> -->
+                </CheckBox>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <EditText
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:hint="CODIGO"
+                        android:textColor="@color/md_green_900"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:maxLength="15"
+                        android:textColorHint="@color/colorAccent"
+                        android:singleLine="true"
+                        android:enabled="false"
+                        android:ems="10"
+                        android:id="@+id/editText" />
+                    <Button
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="onClick"
+                        android:id="@+id/bt_scan"
+                        android:enabled="false"
+                        android:background="@color/md_pink_500"
+                        android:text="ESCANEAR"
+                        />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText2"
+                    android:hint="DESCRIPCION"
+                    android:textStyle="bold"
+                    android:textColor="@color/md_green_900"
+
+                    android:textSize="18sp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/colorAccent"
+
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="MARCA"
+                    android:textColor="@color/md_green_900"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:maxLength="20"
+                    android:textColorHint="@color/colorAccent"
+                    android:singleLine="true"
+                    android:id="@+id/editText3" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="MODELO/SABOR"
+                    android:elegantTextHeight="true"
+                    android:textColor="@color/md_green_900"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColorHint="@color/colorAccent"
+                    android:singleLine="true"
+                    android:id="@+id/editText4" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="MEDIDA"
+                    android:textColor="@color/md_green_900"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColorHint="@color/colorAccent"
+                    android:singleLine="true"
+                    android:id="@+id/editText5" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="REFERENCIA EXTRA"
+                    android:textColor="@color/md_green_900"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColorHint="@color/colorAccent"
+                    android:singleLine="true"
+                    android:id="@+id/editText6" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:focusable="false"
+                        android:hint="UNIDAD VENTA"
+                        android:maxLength="3"
+                        android:textColor="@color/md_green_900"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColorHint="@color/colorAccent"
+                        android:id="@+id/editText7" />
+
+                    <Spinner
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:spinnerMode="dialog"
+                        android:id="@+id/unidadesv" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="UNIDAD DETALLADA"
+                        android:textColor="@color/md_green_900"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:focusable="false"
+                        android:singleLine="true"
+                        android:maxLength="3"
+                        android:textColorHint="@color/colorAccent"
+                        android:id="@+id/editText8" />
+                    <Spinner
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:spinnerMode="dialog"
+                        android:id="@+id/unidadesd" />
+                    <EditText
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:hint="CANTIDAD"
+                        android:visibility="gone"
+                        android:textColor="@color/md_green_900"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/colorAccent"
+                        android:id="@+id/editTextcntemp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_marginTop="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UBICACION"
+                        android:textColor="@color/md_green_900"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        />
+
+                    <Spinner
+                        android:layout_marginTop="10dp"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:spinnerMode="dialog"
+                        android:id="@+id/Piso" />
+
+                    <Spinner
+                        android:layout_marginTop="10dp"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:spinnerMode="dialog"
+                        android:id="@+id/Zona" />
+
+                    <Spinner
+                        android:layout_marginTop="10dp"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:spinnerMode="dialog"
+                        android:id="@+id/Sector" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ubicacion"
+                    android:focusable="false"
+                    android:textColor="@color/md_green_900"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:id="@+id/editText9" />
+
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bt_press1"
+                    android:layout_marginTop="20dp"
+                    android:onClick="verificar"
+                    android:text="CARGAR"
+                    android:id="@+id/button"
+                    android:layout_gravity="center_horizontal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

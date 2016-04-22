@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- INSTANCIAS PRINCIPALES-->
+    <string-array name="Instancias">
+        <item>Seleccionar</item>
+        <item>Desechables</item>
+        <item>Condimento</item>
+        <item>Reposteria y Heladeria</item>
+        <item>Viveres</item>
+        <item>Hogar</item>
+        <item>Confitería</item>
+        <item>Festejo</item>
+        <item>Herramientas</item>
+        <item>Ferretería</item>
+        <item>Indefinida</item>
+
+    </string-array>
+    <!-- TRANSFORMACION DE INSTANCIAS A SUB INSTANCIAS-->
+    <array name="array_instancia_a_subinstancia">
+        <item>@array/vacio2</item>
+        <item>@array/subinstancia_Desechables</item>
+        <item>@array/subinstancia_condimento</item>
+        <item>@array/subinstancia_Reposteria_y_Heladeria</item>
+        <item>@array/subinstancia_Viveres</item>
+        <item>@array/subinstancia_Hogar</item>
+        <item>@array/vacio2</item>
+        <item>@array/vacio2</item>
+        <item>@array/vacio2</item>
+        <item>@array/vacio2</item>
+        <item>@array/vacio2</item>
+    </array>
+
+    <!-- SUB INSTANCIAS POR INSTANCIAS-->
+    <string-array name="subinstancia_Desechables">
+        <item>Seleccionar</item>
+        <item>Plastico</item>
+        <item>Anime</item>
+        <item>Acrilico</item>
+        <item>Cartón</item>
+        <item>Aluminio</item>
+        <item>Papel</item>
+
+    </string-array>
+
+    <string-array name="subinstancia_condimento">
+        <item>Seleccionar</item>
+        <item>Molido</item>
+        <item>Entero</item>
+
+
+    </string-array>
+    <string-array name="subinstancia_Reposteria_y_Heladeria">
+        <item>Seleccionar</item>
+        <item>Reposteria Instrumento</item>
+        <item>Reposteria Vela</item>
+        <item>Reposteria Pastillaje</item>
+        <item>Esencia Liquida </item>
+        <item>Esencia Polvo</item>
+
+    </string-array>
+    <string-array name="subinstancia_Viveres">
+        <item>Seleccionar</item>
+        <item>Perecedero </item>
+        <item>No Perecedero</item>
+    </string-array>
+    <string-array name="subinstancia_Hogar">
+        <item>Seleccionar</item>
+        <item>Hogar Limpieza</item>
+        <item>Hogar Cocina</item>
+    </string-array>
+    <!-- segunda parte de las instancias-->
+
+    <array name="array_subinstancia_a_subinstancia2">
+        <item>@array/vacio2</item>
+        <item>@array/subinstancia2_plastico</item>
+        <item>@array/subinstancia2_acrilico</item>
+        <item>@array/subinstancia2_anime</item>
+        <item>@array/subinstancia2_carton</item>
+        <item>@array/subinstancia2_aluminio</item>
+        <item>@array/subinstancia2_papel</item>
+
+    </array>
+    <array name="array_subinstancia_a_subinstancia3">
+        <item>@array/vacio2</item>
+        <item>@array/subinstancia2_viveres_no_perecederos</item>
+        <item>@array/subinstancia2_viveres_perecederos</item>
+    </array>
+    <array name="array_subinstancia_a_subinstancia4">
+        <item>@array/vacio2</item>
+        <item>@array/vacio2</item>
+        <item>@array/vacio2</item>
+        <item>@array/vacio2</item>
+        <item>@array/vacio2</item>
+        <item>@array/vacio2</item>
+        <item>@array/vacio2</item>
+        <item>@array/vacio2</item>
+        <item>@array/vacio2</item>
+        <item>@array/vacio2</item>
+        <item>@array/vacio2</item>
+        <item>@array/vacio2</item>
+    </array>
+    <array name="array_subinstancia_a_subinstancia5">
+        <item>@array/vacio2</item>
+        <item>@array/subinstancia2_hogar_limpieza</item>
+        <item>@array/subinstancia2_hogar_cocina</item>
+    </array>
+
+    <string-array name="subinstancia2_plastico">
+        <item>Seleccionar</item>
+        <item>Vaso</item>
+        <item>Plato</item>
+        <item>Bandeja</item>
+        <item>Cubierto</item>
+        <item>Bolsa</item>
+
+
+
+    </string-array>
+    <string-array name="subinstancia2_acrilico">
+        <item>Seleccionar</item>
+        <item>Copa</item>
+        <item>Bandeja</item>
+        <item>Cubierto</item>
+    </string-array>
+    <string-array name="subinstancia2_anime">
+        <item>Seleccionar</item>
+        <item>vaso</item>
+        <item>Plato</item>
+        <item>Bandeja</item>
+
+    </string-array>
+
+    <string-array name="subinstancia2_carton">
+        <item>Seleccionar</item>
+        <item>vaso</item>
+        <item>Plato</item>
+        <item>Bandeja</item>
+    </string-array>
+
+    <string-array name="subinstancia2_aluminio">
+        <item>Seleccionar</item>
+        <item>Bandeja</item>
+        <item>Papel</item>
+
+    </string-array>
+
+    <string-array name="subinstancia2_papel">
+        <item>Seleccionar</item>
+        <item>Blonda</item>
+        <item>Bolsa</item>
+        <item>Envolver</item>
+        <item>Parafinado</item>
+    </string-array>
+
+
+
+    <string-array name="subinstancia2_viveres_no_perecederos">
+        <item>Seleccionar</item>
+
+
+    </string-array>
+    <string-array name="subinstancia2_viveres_perecederos">
+        <item>Seleccionar</item>
+        <item>FRUTOS SECOS</item>
+        <item>ENLATADO</item>
+        <item>PASTA</item>
+        <item>GRANO</item>
+        <item>PULPAS DE FRUTAS</item>
+        <item>BEBIDAS</item>
+        <item>CEREALES</item>
+        <item>ENCURTIDOS</item>
+
+
+
+    </string-array>
+    <string-array name="subinstancia2_hogar_limpieza">
+        <item>Seleccionar</item>
+        <item>Quimicos</item>
+        <item>Herramientas</item>
+
+    </string-array>
+    <string-array name="subinstancia2_hogar_cocina">
+        <item>Seleccionar</item>
+
+
+    </string-array>
+    <array name="vacio2">
+        <item>Seleccionar</item>
+
+    </array>
+    <string-array name="pisos">
+        <item>SELECCIONAR</item>
+
+        <item>PISO 1</item>
+        <item>PLANTA BAJA</item>
+        <item>SOTANO 1</item>
+        <item>PRE-DESPACHO</item>
+    </string-array>
+    <string-array name="zonas">
+        <item>SELECCIONAR</item>
+        <item>ZONA 1</item>
+        <item>ZONA 2</item>
+
+    </string-array>
+    <string-array name="sectores">
+        <item>SELECCIONAR</item>
+
+        <item>SECTOR A</item>
+        <item>SECTOR B</item>
+        <item>SECTOR C</item>
+        <item>SECTOR D</item>
+        <item>SECTOR E</item>
+        <item>SECTOR F</item>
+        <item>SECTOR G</item>
+        <item>SECTOR H</item>
+        <item>SECTOR I</item>
+        <item>SECTOR J</item>
+        <item>SECTOR K</item>
+        <item>SECTOR L</item>
+        <item>SECTOR M</item>
+        <item>SECTOR N</item>
+        <item>SECTOR O</item>
+        <item>SECTOR P</item>
+        <item>SECTOR Q</item>
+        <item>SECTOR R</item>
+        <item>SECTOR S</item>
+        <item>SECTOR T</item>
+        <item>SECTOR U</item>
+        <item>SECTOR V</item>
+        <item>SECTOR W</item>
+        <item>SECTOR X</item>
+        <item>SECTOR Y</item>
+        <item>SECTOR Z</item>
+
+    </string-array>
+    <string-array name="unidades">
+        <item>SELECCIONAR</item>
+        <item>UNIDAD</item>
+        <item>PAQUETE</item>
+        <item>CAJA</item>
+        <item>BULTO</item>
+        <item>GALON</item>
+        <item>CUÑETE</item>
+        <item>KILOGRAMOS</item>
+        <item>SACO</item>
+        <item>TAMBOR</item>
+
+
+    </string-array>
+</resources>
